@@ -1,0 +1,29 @@
+{
+  "name": "funo",
+  "version": "0.1.0",
+  "description": "Small library implementing such functions as map, filter, reduce for objects",
+  "main": "funo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwer/funo"
+  },
+  "keywords": [
+    "functional",
+    "objects",
+    "client",
+    "browser",
+    "node",
+    "filter",
+    "map",
+    "reduce"
+  ],
+  "author": "gwer",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/gwer/funo/issues"
+  },
+  "homepage": "https://github.com/gwer/funo"
+}
