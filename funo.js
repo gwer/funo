@@ -3,7 +3,8 @@
     var funo = {
         map: map,
         filter: filter,
-        reduce: reduce
+        reduce: reduce,
+        toArray: toArray
     }
 
     function map(obj, fn) {
@@ -29,6 +30,10 @@
             result = fn(result, obj[key], key, obj)
         }
         return result
+    }
+
+    function toArray(obj) {
+        return obj ? Object.keys(obj).map(function(key){return obj[key]}) : []
     }
 
     function setProp(obj, key, property) {

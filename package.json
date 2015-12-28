@@ -1,6 +1,6 @@
 {
   "name": "funo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Small library implementing such functions as map, filter, reduce for objects",
   "main": "funo.js",
   "scripts": {
