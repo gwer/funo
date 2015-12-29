@@ -1,5 +1,5 @@
 # Funo
-Funo implements map, filter, reduce functions for objects handling. 
+Funo implements map, filter, reduce and other functions for objects handling.
 
 In the JS core these functions are implemented only for arrays. Such libraries as underscore and lodash can work with objects, but they return an array. Thus the information stored in the keys of the original object is lost. Funo solves this problem.
 ## Install
@@ -42,4 +42,4 @@ console.log(funo.filter(a, port => port.isWan))
 ```
 
 ## Version
-0.2.0
+0.3.0
