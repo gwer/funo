@@ -4,6 +4,7 @@
         map: map,
         filter: filter,
         reject: reject,
+        partition: partition,
         reduce: reduce,
         toArray: toArray
     }
@@ -26,6 +27,14 @@
 
     function reject(obj, fn) {
         return filter(obj, reverse(fn))
+    }
+
+    function partition(obj, fn) {
+        return reduce(obj, partitionFn, [{},{}])
+
+        function partitionFn(acc, item, key, obj) {
+            return (setProp(acc[+!!fn(item, key, obj)], key, item), acc)
+        }
     }
 
     function reduce(obj, fn, initial) {

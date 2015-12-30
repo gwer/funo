@@ -42,4 +42,4 @@ console.log(funo.filter(a, port => port.isWan))
 ```
 
 ## Version
-0.3.0
+0.4.0
