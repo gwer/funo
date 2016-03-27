@@ -4,7 +4,7 @@
   "description": "Small library implementing such functions as map, filter, reduce for objects",
   "main": "funo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/gwer/funo/issues"
   },
-  "homepage": "https://github.com/gwer/funo"
+  "homepage": "https://github.com/gwer/funo",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
