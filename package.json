@@ -21,7 +21,7 @@
     "reduce"
   ],
   "author": "gwer",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gwer/funo/issues"
   },
