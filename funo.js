@@ -5,6 +5,7 @@
         filter: filter,
         reject: reject,
         partition: partition,
+        compact: compact,
         reduce: reduce,
         toArray: toArray
     }
@@ -37,6 +38,10 @@
         }
     }
 
+    function compact(obj) {
+        return filter(obj, identity)
+    }
+
     function reduce(obj, fn, initial) {
         var result = initial
 
@@ -58,6 +63,10 @@
         return function(item, key, obj) {
             return !fn.apply(null, arguments)
         }
+    }
+
+    function identity(value) {
+        return value
     }
 
     if (typeof module !== 'undefined'
