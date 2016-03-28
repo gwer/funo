@@ -4,7 +4,7 @@
   "description": "Small library implementing such functions as map, filter, reduce for objects",
   "main": "funo.js",
   "scripts": {
-    "test": "mocha tests.js"
+    "test": "mocha tests/*.test.js"
   },
   "repository": {
     "type": "git",
